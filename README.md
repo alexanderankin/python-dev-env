@@ -4,7 +4,7 @@
 
 how to use this:
 
-```
+```bash
 tag=pde # arbitrary
-docker build . -t $tag && docker run -it -v $PWD/src:/pkg-source $tag
+docker build . -t $tag && docker run -it -v $PWD/src:/pkg-source $tag bash -c "pip install -e /pkg-source; python -c 'import somepackage; print(somepackage.some_value)'"
 ```

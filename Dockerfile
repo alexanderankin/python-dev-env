@@ -5,5 +5,3 @@ run apk add bash
 volume /pkg-source
 run mkdir /workdir
 workdir /workdir
-
-entrypoint /bin/bash
